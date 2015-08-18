@@ -72,6 +72,8 @@ var deepEqual = function(aMAS1, aMAS2, maxdepth)
                     for (var litem of aMAS1)
                     {
                         retval = deepEqual(litem, aMAS2[lindex], maxdepth-1);
+                        if (!retval)
+                            break;
                         lindex += 1;
                     }
                 }

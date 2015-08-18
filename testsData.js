@@ -40,7 +40,7 @@ testsJson = {
                 "fullname": "#@.name",
                 "saying": {
                   "_type": "#",
-                  "path": "@.quote",
+                  "path": "@..quote",
                   "nulls": false
                 }
               }
@@ -120,7 +120,7 @@ testsJson = {
                   "pics": [
                     {
                       "_type": "#",
-                      "path": "@" 
+                      "path": "@[*]" 
                     }
                   ]
                 },

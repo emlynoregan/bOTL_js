@@ -30,7 +30,7 @@ testsJson = {
         "root": "#$.name",
         "local": "#@.name",
         "list": [ "#@.name" ],
-        "object1": {'saying': ["#@.quote"], 'fullname': '#@.name'},
+        "object1": {"saying": ["#@.quote"], "fullname": "#@.name"},
         "synopsis": {
           "characters": [
             {
@@ -224,7 +224,7 @@ testsJson = {
     "sources": {
         "freddo string": "Freddo",
         "freddo in list": ["Freddo"],
-        "object1": {'saying': [], 'fullname': "Freddo"},
+        "object1": {"saying": [], "fullname": "Freddo"},
         "synopsis": {
               "characters": [
                 {
@@ -370,7 +370,7 @@ testsJson = {
             "names": ["#$..name"]
           }
         },
-        "KeepNulls": [{'quote': 'Yes'}, null, null],
-        "DontKeepNulls": [{'quote': 'Yes'}]
+        "KeepNulls": [{"quote": "Yes"}, null, null],
+        "DontKeepNulls": [{"quote": "Yes"}]
     }
 }

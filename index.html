@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>bOTL Object Transformation Language</title>
+
+    <!-- Place this data between the <head> tags of your website -->
+    <meta name="description" content="Create bOTL transformations online" />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="bOTL Object Transformation Language">
+    <meta name="twitter:site" content="@emlynoregan">
+    <meta name="twitter:title" content="bOTL Object Transformation Language">
+    <meta name="twitter:description" content="Create bOTL transformations online">
+    <meta name="twitter:creator" content="@emlynoregan">
+    <-- Twitter Summary card images must be at least 120x120px -->
+    <meta name="twitter:image" content="http://www.example.com/image.jpg">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Title Here" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.example.com/" />
+    <meta property="og:image" content="http://example.com/image.jpg" />
+    <meta property="og:description" content="Description Here" /> 
+    <meta property="og:site_name" content="Site Name, i.e. Moz" />
+    <meta property="fb:admins" content="Facebook numeric ID" />
+
+    <script type="text/javascript" src="bOTL.js"></script>
+    <script type="text/javascript" src="testsData.js"></script>
+    <link rel="stylesheet" href="gui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body role="document">
+    <div class="container-fluid theme-showcase" role="main">
+      <div class="page-header">
+        <h1>bOTL Object Transformation Language</h1>
+      </div>
+      <div class="row" id="vertical">
+        <div class="col-md-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Source JSON</h3>
+            </div>
+            <div class="panel-body">
+              <div>
+                <div id="edSource"></div>
+              </div>
+              <div id="sourcemsg" class="message">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">bOTL Transform</h3>
+            </div>
+            <div class="panel-body">
+              <div>
+                <div id="edTransform"></div>
+              </div>
+              <div id="transformmsg" class="message">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Result JSON</h3>
+            </div>
+            <div class="panel-body">
+              <div>
+                <div id="edResult"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3 class="panel-title">Info</h3>
+            </div>
+            <div class="panel-body">
+              <div>
+                <p>
+                    Edit the Source and / or Transform, and the result updates automatically.
+                </p>
+                <p>
+                    Editor built by Emlyn O'Regan, August 2015. It uses <a target="_blank" href="https://github.com/emlynoregan/bOTL_js">bOTL.js</a>.
+                </p>
+                <p>
+                    Learn about <a target="_blank" href="https://medium.com/@emlynoregan/botl-object-transformation-language-35ed297c6671">bOTL Object Transformation Language</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="gui.js"></script>
+</body>
+</html>

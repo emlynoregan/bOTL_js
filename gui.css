@@ -1,0 +1,33 @@
+#edSource { 
+/*     position: absolute;
+    top: 20;
+    right: 20;
+    bottom: 20;
+    left: 20; */
+    height: 400px;
+}
+
+#edTransform { 
+/*     position: absolute;
+    top: 20;
+    right: 20;
+    bottom: 20;
+    left: 20; */
+    height: 400px;
+}
+
+#edResult { 
+/*     position: absolute;
+    top: 20;
+    right: 20;
+    bottom: 20;
+    left: 20; */
+    height: 400px;
+}
+
+.message{
+    color: red;
+}
+
+/* #vertical{height:100%;border-width:0;}
+#horizontal{width:100%;height:100%;} */

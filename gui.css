@@ -29,5 +29,18 @@
     color: red;
 }
 
-/* #vertical{height:100%;border-width:0;}
-#horizontal{width:100%;height:100%;} */
+.floatleft{
+    float: left;
+}
+
+#logo{
+    height: 100px;
+    float: right;
+}
+
+#smalllogo{
+    float: left;
+    height: 60px;
+    margin-right: 10px;
+}
+

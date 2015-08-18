@@ -116,17 +116,16 @@ var EvaluateFullSection = function(aScope, abOTLSection)
         if (lhastransform)
         {
             // need to transform all items in selection
-            for (var lselection of lselections)
-            {
+            lselections.forEach(function(aSelection){
                 // set up scope for transform, store 
                 // settings for restoration afterwards
                 var lprev_at = aScope["@"]
                 var lprev_scopeid;
-                aScope["@"] = lselection
+                aScope["@"] = aSelection;
                 if (lscopeid)
                 {
                     lprev_scopeid = aScope[lscopeid]
-                    aScope[lscopeid] = lselection
+                    aScope[lscopeid] = aSelection
                 }
                 
                 var lchildResults = _transform(aScope, ltransform);
@@ -137,7 +136,7 @@ var EvaluateFullSection = function(aScope, abOTLSection)
                 aScope["@"] = lprev_at
                 if (lscopeid)
                     aScope[lscopeid] = lprev_scopeid
-            }
+            })
         }
         else
             lresults = lselections
@@ -155,11 +154,10 @@ var EvaluateFullSection = function(aScope, abOTLSection)
     {
         var lfiltered = []
 
-        for (var lresult of lresults)
-        {
-            if (lresult != null)
-                lfiltered = lfiltered.concat([lresult])
-        }
+        lresults.forEach(function(aResult){
+            if (aResult != null)
+                lfiltered = lfiltered.concat([aResult])
+        })
              
         lresults = lfiltered
     }
@@ -223,11 +221,10 @@ var EvaluateObject = function (aScope, abOTLObject)
 var EvaluateList = function(aScope, abOTLList)
 {
     var lresults = [];
-    for (var litem of abOTLList)
-    { 
-        var lresult = _transform(aScope, litem)
+    abOTLList.forEach(function(aItem){
+        var lresult = _transform(aScope, aItem)
         lresults = lresults.concat(lresult["results"])
-    }
+    })
     return {"results": [lresults], "keepnulls": true}
 }
 

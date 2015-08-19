@@ -47,7 +47,7 @@ var UpdateResult = function()
         lsourceJson = JSON.parse(edSource.getValue());
         ltransformJson = JSON.parse(edTransform.getValue());
 
-        lresult = transform(lsourceJson, ltransformJson)
+        lresult = bOTL.transform(lsourceJson, ltransformJson)
 
         edResult.setValue(JSON.stringify(lresult, null, space=2))
         edResult.gotoLine(0);

@@ -24,7 +24,7 @@ var runtest = function(results, testargs)
 
     retval = retval = retval = retval.concat(testargs)
 
-    var lresult = transform(testargs[1], testargs[2])
+    var lresult = bOTL.transform(testargs[1], testargs[2])
 
     retval = retval.concat([lresult])
     retval = retval.concat([deepEqual(lresult, testargs[3], 100)])

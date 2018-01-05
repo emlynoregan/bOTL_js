@@ -1,31 +1,4 @@
-testsJson = {
-    "tests": [
-        ["nulls", null, null, null],
-        ["root", "freddo dict", "root", "freddo string"],
-        ["local", "freddo dict", "local", "freddo string"],
-        ["list", "freddo dict", "list", "freddo in list"],
-        ["object1", "freddo dict", "object1", "object1"],
-        ["synopsis", "source1", "synopsis", "synopsis" ],
-        ["basics", "source1", "basics", "basics" ],
-        ["sections1", "source1", "sections1", "source1" ],
-        ["sections2", "source1", "sections2", "races list"],
-        ["sections3", "source1", "sections3", "none string"],
-        ["sections4", "source1", "sections4", "races objs"],
-        ["brief1", "source1", "brief1", "source1"],
-        ["brief2", "source1", "brief2", "races list"],
-        ["brief4", "source1", "brief4", "races objs"],
-        ["scope", "source1", "scope", "scope"],
-        ["scope2", "source1", "scope2", "scope2"],
-        ["scope3", "source1", "scope3", "scope3"],
-        ["list2", "source1", "list2", "list2"],
-        ["context1", "source1", "context1", "context1"],
-        ["context2", "source1", "context2", "context2"],
-        ["context3", "source1", "context3", "context3"],
-        ["ObjectSection", "source1", "ObjectSection", "ObjectSection"],
-        ["LiteralSection", "source1", "LiteralSection", "LiteralSection"],
-        ["KeepNulls", "source1", "KeepNulls", "KeepNulls"],
-        ["DontKeepNulls", "source1", "DontKeepNulls", "DontKeepNulls"]
-    ],
+module.exports = {
     "transforms": {
         "root": "#$.name",
         "local": "#@.name",
@@ -373,4 +346,4 @@ testsJson = {
         "KeepNulls": [{"quote": "Yes"}, null, null],
         "DontKeepNulls": [{"quote": "Yes"}]
     }
-}
+};

@@ -1,10 +1,10 @@
 {
-  "name": "bOTL_js",
-  "version": "0.0.1",
+  "name": "botl",
+  "version": "1.0.0",
   "description": "bOTL: Object Transformation Language for Javascript",
   "main": "bOTL.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -12,14 +12,20 @@
   },
   "keywords": [
     "transform",
+    "template",
+    "mas",
     "json",
     "javascript",
     "library"
   ],
   "author": "Emlyn O'Regan <emlynoregan@gmail.com>",
+  "contributors": "Igor Sowinski <igorsowinski.mail@gmail.com>",
   "license": "Apache License 2.0",
   "bugs": {
     "url": "https://github.com/emlynoregan/bOTL_js/issues"
   },
-  "homepage": "https://github.com/emlynoregan/bOTL_js#readme"
+  "homepage": "https://github.com/emlynoregan/bOTL_js#readme",
+  "devDependencies": {
+    "jest": "^22.0.4"
+  }
 }

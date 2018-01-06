@@ -1,0 +1,15 @@
+.npmignore
+bOTL-experimental.js
+bOTL.jpg
+bOTL.js-old
+bower.json
+favicon-16x16.png
+favicon-32x32.png
+favicon-96x96.png
+favicon.png
+gui.css
+gui.js
+index.html
+jest.config.js
+node_modules/
+__tests__/

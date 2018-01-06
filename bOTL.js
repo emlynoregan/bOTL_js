@@ -17,7 +17,7 @@
     
     //exports
     bOTL.name = 'bOTL.js';
-    bOTL.version = '0.0.0';
+    bOTL.version = '1.0.0';
     bOTL.transform = transform;
 
     function transform(aMASSource, abOTLTransform) 

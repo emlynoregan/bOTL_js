@@ -28,11 +28,16 @@ Just grab the file bOTL.js and use it like this:
   let source = {"name": "Freddo"};
   let transform = "#$.name";
 
-  let result = transform(source, transform);
+  let result = bOTL.transform(source, transform);
   // result: "Freddo"
 </script>
 ```
 
+### Using Github as a CDN
+Don't want to download anything at all? Try this [fiddle](https://jsfiddle.net/emlyn/oqq3qa92/1/). Note that this uses a Github Pages url (https://emlynoregan.github.io/bOTL_js/bOTL.js), which has [usage limits](https://help.github.com/articles/what-is-github-pages/#usage-limits).
+
+### Miscelaneous
 You can also use a package manager like [yarn](https://yarnpkg.com/), [npm](https://www.npmjs.com) or [bower](https://bower.io/) (deprecated).
 
+## Acknowledgements
 bOTL.js includes [Stefan Goessner's JSONPath implementation](https://code.google.com/p/jsonpath/), released under an MIT license.

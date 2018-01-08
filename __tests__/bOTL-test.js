@@ -10,17 +10,17 @@ const transformEqual = (source, transform, result) => {
 
 describe("for bOTL.transform()", () => {
   describe("root", () => {
-    it("supports root selector", () => {
+    it("supports root selectors", () => {
       return transformEqual(objects["freddo dict"], transforms["root"], objects["freddo string"]);
     });
   });
 
   describe("local", () => {
-    it("supports local selector", () => {
+    it("supports local selectors", () => {
       return transformEqual(objects["freddo dict"], transforms["local"], objects["freddo string"]);
     });
 
-    it("supports local selector in list", () => {
+    it("supports local selectors in list", () => {
       return transformEqual(objects["freddo dict"], transforms["list"], objects["freddo in list"]);
     });
   });
@@ -40,37 +40,37 @@ describe("for bOTL.transform()", () => {
   });
 
   describe("section", () => {
-    it("supports JSONPath-style selection - plain", () => {
+    it("supports JSONPath-style selectors - plain", () => {
       return transformEqual(objects["source1"], transforms["sections1"], objects["source1"]);
     });
 
-    it("supports JSONPath-style selection - with path", () => {
+    it("supports JSONPath-style selectors - with path", () => {
       return transformEqual(objects["source1"], transforms["sections2"], objects["races list"]);
     });
 
-    it("supports JSONPath-style selection - with path and null transform", () => {
+    it("supports JSONPath-style selectors - with path and null transform", () => {
       return transformEqual(objects["source1"], transforms["sections3"], objects["none string"]);
     });
 
-    it("supports JSONPath-style selection - with path and transform", () => {
+    it("supports JSONPath-style selectors - with path and transform", () => {
       return transformEqual(objects["source1"], transforms["sections4"], objects["races objs"]);
     });
 
-    it("supports JSONPath-style selection - with path and list transform", () => {
+    it("supports JSONPath-style selectors - with path and list transform", () => {
       return transformEqual(objects["source1"], transforms["list2"], objects["list2"]);
     });
   });
 
   describe("brief (inline)", () => {
-    it("supports inline root selection - plain", () => {
+    it("supports inline root selectors - plain", () => {
       return transformEqual(objects["source1"], transforms["brief1"], objects["source1"]);
     });
 
-    it("supports inline root selection - path in list", () => {
+    it("supports inline root selectors - path in list", () => {
       return transformEqual(objects["source1"], transforms["brief2"], objects["races list"]);
     });
 
-    it("supports inline root selection - path in list with transform", () => {
+    it("supports inline root selectors - path in list with transform", () => {
       return transformEqual(objects["source1"], transforms["brief4"], objects["races objs"]);
     });
   });

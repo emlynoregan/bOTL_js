@@ -7,7 +7,7 @@ script:
 - npm test
 deploy:
   provider: npm
-  email: igorsowinski.mail@gmail.com
+  email: igor@sowinski.blue
   on:
     branch: master
   api_key:
